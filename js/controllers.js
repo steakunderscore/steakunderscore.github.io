@@ -3,9 +3,12 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('Index', [function() {
 
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('Contact', [function() {
+
+  }])
+  .controller('About', [function() {
 
   }]);
