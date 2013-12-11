@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/blog', {templateUrl: 'partials/blog.html', controller: 'Blog'});
   $routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'About'});
   $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'Contact'});
   $routeProvider.when('/', {templateUrl: 'partials/index.html', controller: 'Index'});
