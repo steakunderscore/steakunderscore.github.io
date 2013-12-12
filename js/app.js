@@ -13,6 +13,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/blog', {templateUrl: 'partials/blog.html', controller: 'Blog'});
   $routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'About'});
   $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'Contact'});
+  $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'login'});
   $routeProvider.when('/', {templateUrl: 'partials/index.html', controller: 'Index'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

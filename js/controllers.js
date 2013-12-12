@@ -9,6 +9,10 @@ angular.module('myApp.controllers', []).
   }])
   .controller('About', [function() {
   }])
+  .controller('Login', function($scope, angularFire, angularFireAuth) {
+    var ref = new Firebase("https://<my-firebase>.firebaseio.com/");
+    angularFireAuth.initialize(ref, {scope: $scope, name: "user"});
+  })
   .controller('Blog', function ($scope) {
     // TODO get this data from:
     //$resource([, paramDefaults][, actions]);
